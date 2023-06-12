@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+void main(){
+	int n,i;
+	char d[20],f[10][10],name;
+	printf("enter directory name:");
+	scanf("%s",&d);
+	printf("enter no.of files to be created:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		printf("enter file %d name:",i+1);
+		scanf("%s",&f[i]);
+	}
+	printf("\ndirctory name:%s\n",d);
+	printf("files :\n");
+	for(i=0;i<n;i++){
+		printf("%s\n",f[i]);
+	}
+}
